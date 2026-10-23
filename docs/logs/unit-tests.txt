@@ -1,0 +1,134 @@
+
+> steel-frontier@1.0.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: 扫掠碰撞找到最近墙体，高速线段不隧穿
+ok 1 - 扫掠碰撞找到最近墙体，高速线段不隧穿
+  ---
+  duration_ms: 2.4751
+  type: 'test'
+  ...
+# Subtest: 九张地图的多种种子：出生区、基地、维修点可达
+ok 2 - 九张地图的多种种子：出生区、基地、维修点可达
+  ---
+  duration_ms: 618.2074
+  type: 'test'
+  ...
+# Subtest: 同种子生成相同地图与战役组合
+ok 3 - 同种子生成相同地图与战役组合
+  ---
+  duration_ms: 2.9029
+  type: 'test'
+  ...
+# Subtest: 护盾先吸收，剩余伤害才扣耐久
+ok 4 - 护盾先吸收，剩余伤害才扣耐久
+  ---
+  duration_ms: 2.1466
+  type: 'test'
+  ...
+# Subtest: 炮口贴钢墙不在墙后生成炮弹
+ok 5 - 炮口贴钢墙不在墙后生成炮弹
+  ---
+  duration_ms: 1.523
+  type: 'test'
+  ...
+# Subtest: 高速弹先击中墙，不伤害墙后敌人
+ok 6 - 高速弹先击中墙，不伤害墙后敌人
+  ---
+  duration_ms: 5.892
+  type: 'test'
+  ...
+# Subtest: 单发直击不叠加自身范围伤害
+ok 7 - 单发直击不叠加自身范围伤害
+  ---
+  duration_ms: 1.5944
+  type: 'test'
+  ...
+# Subtest: 墙体摧毁同步开放碰撞与导航
+ok 8 - 墙体摧毁同步开放碰撞与导航
+  ---
+  duration_ms: 0.6906
+  type: 'test'
+  ...
+# Subtest: 冲刺与高速移动不能穿过薄墙
+ok 9 - 冲刺与高速移动不能穿过薄墙
+  ---
+  duration_ms: 0.7324
+  type: 'test'
+  ...
+# Subtest: 无限弹药六种武器均能持续输出，无隐式弹匣
+ok 10 - 无限弹药六种武器均能持续输出，无隐式弹匣
+  ---
+  duration_ms: 121.2591
+  type: 'test'
+  ...
+# Subtest: 玩家普通攻击与环境连锁不伤基地
+ok 11 - 玩家普通攻击与环境连锁不伤基地
+  ---
+  duration_ms: 1.4901
+  type: 'test'
+  ...
+# Subtest: 奖励与购买事务只执行一次，失败可重试
+ok 12 - 奖励与购买事务只执行一次，失败可重试
+  ---
+  duration_ms: 0.7542
+  type: 'test'
+  ...
+# Subtest: 玩家失败只结算一次，之后不再生成与伤害
+ok 13 - 玩家失败只结算一次，之后不再生成与伤害
+  ---
+  duration_ms: 1.6966
+  type: 'test'
+  ...
+# Subtest: 损坏存档、缺失字段和越界数据安全回退
+ok 14 - 损坏存档、缺失字段和越界数据安全回退
+  ---
+  duration_ms: 0.6307
+  type: 'test'
+  ...
+# Subtest: 敌方炮弹直接命中基地只结算一次
+ok 15 - 敌方炮弹直接命中基地只结算一次
+  ---
+  duration_ms: 1.4224
+  type: 'test'
+  ...
+# Subtest: 电弧在邻近敌军间跳跃，但不会跨钢墙
+ok 16 - 电弧在邻近敌军间跳跃，但不会跨钢墙
+  ---
+  duration_ms: 1.1328
+  type: 'test'
+  ...
+# Subtest: Boss 阶段转换有预警且不直接伤害玩家与基地
+ok 17 - Boss 阶段转换有预警且不直接伤害玩家与基地
+  ---
+  duration_ms: 3.3643
+  type: 'test'
+  ...
+# Subtest: 胜利结束生成、弹道和后续敌军伤害
+ok 18 - 胜利结束生成、弹道和后续敌军伤害
+  ---
+  duration_ms: 1.3124
+  type: 'test'
+  ...
+# Subtest: 所有出生警报提供至少三秒反应时间且远离玩家
+ok 19 - 所有出生警报提供至少三秒反应时间且远离玩家
+  ---
+  duration_ms: 7.7973
+  type: 'test'
+  ...
+# Subtest: 紧急护盾援助遵守上限，后续帧不无故丢失护盾
+ok 20 - 紧急护盾援助遵守上限，后续帧不无故丢失护盾
+  ---
+  duration_ms: 0.8923
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1755.2793

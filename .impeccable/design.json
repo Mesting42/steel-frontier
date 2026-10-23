@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T00:00:00+08:00",
+  "title": "Design System: 钢铁防线",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 25px 90px #091a1166",
+        "purpose": "暂停和需要明确决定的对话框"
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": "160ms ease",
+        "purpose": "按钮状态反馈，减少动态偏好时禁用"
+      }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "1100px" },
+      { "name": "touch-layout", "value": "1024px" },
+      { "name": "portrait-menu", "value": "650px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "出击按钮",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "推进战役和整备流程的主要行动",
+      "html": "<button class=\"primary\">开始战役</button>",
+      "css": ".primary{background:#ddbd82;color:#23362e;border:0;border-radius:4px;padding:12px 22px;min-height:48px;font:700 15px sans-serif}.primary:hover{background:#ecd2a1}.primary:focus-visible{outline:3px solid #ddbd82;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "引擎轰鸣，防线未破。",
+    "rules": [
+      {
+        "section": "Layout",
+        "name": "The Battlefield Rule",
+        "body": "不在战场中央放长期操作面板；中央仅显示短暂预警、准星和必要的敌军状态。"
+      }
+    ]
+  }
+}

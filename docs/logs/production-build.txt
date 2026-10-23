@@ -1,0 +1,18 @@
+
+> steel-frontier@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         1.42 kB │ gzip:   0.98 kB
+dist/assets/rajdhani-latin-700-normal-e0Uj8ZlN.woff    12.06 kB
+dist/assets/rajdhani-latin-600-normal-Dx02qI2_.woff    12.09 kB
+dist/assets/rajdhani-latin-700-normal-BPDUZo87.woff2   15.69 kB
+dist/assets/rajdhani-latin-600-normal-CXCVEoA9.woff2   15.73 kB
+dist/assets/index-pnSb2rAO.css                         36.32 kB │ gzip:   8.19 kB
+dist/assets/index-C848aPoo.js                         109.45 kB │ gzip:  42.37 kB
+dist/assets/three-D_ube8d_.js                         517.96 kB │ gzip: 131.92 kB
+✓ built in 4.46s

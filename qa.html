@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>钢铁防线 · 浏览器验收台</title>
+    <style>
+      body {
+        margin: 0;
+        background: #192d24;
+        color: #e1e9d4;
+        font:
+          14px "Microsoft YaHei",
+          sans-serif;
+      }
+      header {
+        padding: 15px 22px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0 15px 0 0;
+      }
+      button {
+        background: #d9bd86;
+        color: #20332a;
+        border: 0;
+        border-radius: 4px;
+        padding: 11px 16px;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.4;
+      }
+      #status {
+        color: #c5d6b9;
+      }
+      #results {
+        padding: 8px 22px;
+        max-height: 180px;
+        overflow: auto;
+        font-size: 12px;
+        line-height: 1.7;
+        white-space: pre-wrap;
+      }
+      iframe {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: calc(100vh - 125px);
+        background: #283a30;
+      }
+      .fail {
+        color: #f0aa91;
+      }
+      .pass {
+        color: #b4d7b5;
+      }
+      small {
+        color: #a8bda4;
+      }
+      body:has(#results:not(:empty)) iframe {
+        height: calc(100vh - 260px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>钢铁防线 · 浏览器验收台</h1>
+      <button id="smoke">运行输入与暂停检查</button
+      ><button id="campaign">运行六战自动实战（12×）</button
+      ><button id="restore">恢复验收前存档</button><span id="status">就绪</span
+      ><small
+        >自动实战只产生正常驾驶与射击输入，经过真实路线、奖励和商店；不调用胜利或伤害接口。</small
+      >
+    </header>
+    <div id="results" role="log" aria-live="polite"></div>
+    <iframe id="game" src="/" title="真实游戏运行窗口"></iframe>
+    <script type="module" src="/tests/browser.ts"></script>
+  </body>
+</html>
