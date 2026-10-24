@@ -1623,12 +1623,8 @@ kbd {
   }
 }
 @media (pointer: coarse), (max-width: 1024px) {
-  .touch-controls {
-    display: block;
-  }
-  .in-battle #aim-reticle {
-    display: none;
-  }
+
+
   .battle-ui .hud-bottom {
     bottom: max(15px, env(safe-area-inset-bottom));
   }
@@ -1655,9 +1651,7 @@ kbd {
   .battle-ui .weapon-panel > div > span {
     font-size: 9px;
   }
-  .battle-ui .swap-button {
-    display: none;
-  }
+
   .battle-ui .cooldowns {
     position: absolute;
     right: calc(var(--stick-size) + 3px);
@@ -1673,9 +1667,7 @@ kbd {
     font-size: 9px;
     gap: 4px;
   }
-  .battle-ui .cooldown kbd {
-    display: none;
-  }
+
   .battle-ui .cooldown b {
     font-size: 16px;
   }
@@ -2773,5 +2765,22 @@ kbd {
   .force-touch .battle-ui .hud-map canvas {
     width: 66px;
     height: 66px;
+  }
+}
+
+/* Input UI follows the primary pointer, never the width of an embedded frame.
+   The responsive layout above still adapts to narrow desktop windows. */
+@media (pointer: coarse) {
+  .touch-controls {
+    display: block;
+  }
+  .in-battle #aim-reticle {
+    display: none;
+  }
+  .battle-ui .swap-button {
+    display: none;
+  }
+  .battle-ui .cooldown kbd {
+    display: none;
   }
 }
