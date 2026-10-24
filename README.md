@@ -69,3 +69,14 @@ npm run build
 开发服务器提供 [浏览器验收台](http://localhost:5173/qa.html)，可运行键鼠与双指输入、暂停、恢复和六战自动输入实战。自动实战明确标注 12 倍模拟速度，只使用正常驾驶、瞄准、射击、技能和界面操作，不修改生命、不跳关、不调用胜利入口。生产构建移除自动驾驶分支；验收台不进入 `dist`。
 
 详细测试证据见 [docs/测试报告.md](docs/测试报告.md)，系统关系和扩展方式见 [docs/交接文档.md](docs/交接文档.md)，资源归属见 [docs/素材说明.md](docs/素材说明.md)。
+
+<!-- pixel-pier-game-listing:start -->
+## Game listing / 游戏展示
+
+- **Game developer / 游戏开发者:** Mest ([@Mesting42](https://github.com/Mesting42))
+- **Pixel Pier listing / 游戏展示页面:** [Steel Frontier](https://riverglint.link/games/steel-frontier/)
+
+This game is listed on Pixel Pier with a play entry and game guide. This link identifies a game-development and listing relationship; it does not identify the developer as the website operator or operating entity.
+
+本游戏在 Pixel Pier 展示，并提供游玩入口与游戏指南。此链接仅表示游戏开发与展示关联，不代表开发者是该网站的运营者或运营主体。
+<!-- pixel-pier-game-listing:end -->
